@@ -1,24 +1,24 @@
-# README
+# 家計簿管理システム Midas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+これは家計簿管理システムです。
+自分好みに構築していきます。
 
-Things you may want to cover:
+## 使い方
 
-* Ruby version
+DB migration
 
-* System dependencies
+```
+$ rails db:migrate
+```
 
-* Configuration
+テスト
 
-* Database creation
+```
+$ rails t
+```
 
-* Database initialization
+起動
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails s
+```
