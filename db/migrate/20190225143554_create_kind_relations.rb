@@ -6,5 +6,7 @@ class CreateKindRelations < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index :kind_relations, :kind_group_id
+    add_index :kind_relations, [:kind_group_id, :kind_id], unique: true
   end
 end

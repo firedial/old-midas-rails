@@ -6,5 +6,7 @@ class CreatePlaceRelations < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index :place_relations, :place_group_id
+    add_index :place_relations, [:place_group_id, :place_id], unique: true
   end
 end

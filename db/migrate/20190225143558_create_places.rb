@@ -6,5 +6,6 @@ class CreatePlaces < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index :places, :name, unique: true
   end
 end

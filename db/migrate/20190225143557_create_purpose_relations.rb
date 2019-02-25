@@ -6,5 +6,7 @@ class CreatePurposeRelations < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index :purpose_relations, :purpose_group_id
+    add_index :purpose_relations, [:purpose_group_id, :purpose_id], unique: true
   end
 end
