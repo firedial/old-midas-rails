@@ -1,0 +1,2 @@
+class KindRelation < ApplicationRecord
+end

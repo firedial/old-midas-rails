@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  item: MyString
+  kind: one
+  purpose: one
+  place: one
+  date: 2019-02-25
+
+two:
+  amount: 1
+  item: MyString
+  kind: two
+  purpose: two
+  place: two
+  date: 2019-02-25

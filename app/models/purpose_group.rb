@@ -1,0 +1,2 @@
+class PurposeGroup < ApplicationRecord
+end

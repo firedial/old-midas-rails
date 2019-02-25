@@ -1,0 +1,2 @@
+class PlaceGroup < ApplicationRecord
+end

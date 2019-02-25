@@ -1,0 +1,2 @@
+class KindGroup < ApplicationRecord
+end
