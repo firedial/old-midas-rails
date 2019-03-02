@@ -3,16 +3,16 @@ require 'test_helper'
 class PurposeTest < ActiveSupport::TestCase
 
   def setup
-    @kind = Kind.new(name: 'test')
+    @purpose = Purpose.new(name: 'test')
   end
 
   test 'should be valid' do
-    assert @kind.valid?
+    assert @purpose.valid?
   end
 
   test 'name should be present' do
-    @kind.name = '  '
-    assert_not @kind.valid?
+    @purpose.name = '  '
+    assert_not @purpose.valid?
   end
 
 end

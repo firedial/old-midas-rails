@@ -3,16 +3,16 @@ require 'test_helper'
 class PlaceTest < ActiveSupport::TestCase
 
   def setup
-    @kind = Kind.new(name: 'test')
+    @place = Place.new(name: 'test')
   end
 
   test 'should be valid' do
-    assert @kind.valid?
+    assert @place.valid?
   end
 
   test 'name should be present' do
-    @kind.name = '  '
-    assert_not @kind.valid?
+    @place.name = '  '
+    assert_not @place.valid?
   end
 
 end
