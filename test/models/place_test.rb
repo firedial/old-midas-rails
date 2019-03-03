@@ -1,7 +1,18 @@
 require 'test_helper'
 
 class PlaceTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  def setup
+    @place = Place.new(name: 'test')
+  end
+
+  test 'should be valid' do
+    assert @place.valid?
+  end
+
+  test 'name should be present' do
+    @place.name = '  '
+    assert_not @place.valid?
+  end
+
 end
